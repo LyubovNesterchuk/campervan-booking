@@ -9,6 +9,10 @@ export interface Review {
   comment: string;
 }
 
+export type CamperForm = "alcove" | "panelTruck" | "fullyIntegrated";
+export type Transmission = "automatic" | "manual";
+export type Engine = "diesel" | "petrol" | "hybrid";
+
 export interface Camper {
   id: string;
   name: string;
@@ -16,14 +20,14 @@ export interface Camper {
   rating: number;
   location: string;
   description: string;
-  form: string;
+  form: CamperForm; 
   length: string;
   width: string;
   height: string;
   tank: string;
   consumption: string;
-  transmission: string;
-  engine: string;
+  transmission: Transmission; 
+  engine: Engine; 
   AC: boolean;
   bathroom: boolean;
   kitchen: boolean;
