@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import css from "./LayoutCampers.module.css"
 
 export default function LayoutCampers ({
   children,
@@ -9,11 +8,13 @@ export default function LayoutCampers ({
   sidebar: React.ReactNode;
 }>) {
   return (
-    <section className={css.container}>
-      <aside className={css.sidebar}>
+    <section>
+      <aside>
         <Suspense fallback={<div>Loading...</div>}>{sidebar}</Suspense>
       </aside>
-      <div className={css.campersWrapper}>{children}</div>
+      <div >{children}</div>
     </section>
   );
 };
+
+

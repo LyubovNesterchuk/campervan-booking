@@ -1,0 +1,110 @@
+.camperDetailsPageSection {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.ratingLocation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.rating,
+.location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.totalReviews {
+    text-decoration: underline;
+}
+
+.filterIconSvg {
+    width: 16px;
+    height: 16px;
+}
+
+.rightSidePrice {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.description {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+@media screen and (min-width: 375px) {
+    .camperDetailsPageSection {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .camperDetailsPageSection {
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 768px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .ratingLocation {
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .camperDetailsPageSection {
+        width: 1440px;
+        padding: 48px 64px 80px 64px;
+    }
+}

@@ -1,0 +1,146 @@
+.sidebar {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.mb40 {
+    margin-bottom: 32px;
+}
+
+.sidebarLabel {
+    display: block;
+    color: var(--color-text-grey, #6b7280);
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebarInputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.sidebarInput {
+    width: 100%;
+    padding: 18px 18px 18px 44px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--color-text-dark);
+}
+
+.sidebarInput:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #f3f4f6 inset;
+    -webkit-text-fill-color: var(--color-text-dark);
+}
+
+.sidebarInput:focus {
+    outline: 1px solid var(--color-text-dark);
+}
+
+.sidebarIconInside {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 20px;
+    color: var(--color-text-grey);
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.sidebarSectionTitle {
+    color: var(--color-text-dark);
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.sidebarBlockTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-top: 24px;
+}
+
+.filterGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.radioGrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    gap: 10px;
+}
+
+
+.filterGrid>*,
+.radioGrid>* {
+    width: calc(50% - 5px);
+}
+
+
+.filterIconSvg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+
+.sidebarBtn {
+    margin-top: 16px;
+    padding: 16px;
+    width: 100%;
+    background: var(--color-error);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 200px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebarBtn:hover {
+    background: var(--color-error-dark);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .filterGrid>*,
+    .radioGrid>* {
+        width: calc(33.333% - 6.666px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sidebar {
+        width: 360px;
+        flex-shrink: 0;
+    }
+
+    .filterGrid>*,
+    .radioGrid>* {
+        width: auto;
+    }
+
+    .sidebarBtn {
+        width: 166px;
+    }
+
+    .mb40 {
+        margin-bottom: 40px;
+    }
+}

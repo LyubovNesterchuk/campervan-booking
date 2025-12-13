@@ -1,4 +1,4 @@
-import css from "./Home.module.css";
+import css from "./not-found.module.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: "404 - Page not found",
     description: "Sorry, the page you are looking for does not exist.",
     url: "https://notehub.com/not-found",
-    siteName: "Campervan booking",
+    siteName: "Travel Trucks — Campervan Booking App",
     images: [
       {
-        url: "https://ac.goit.global/fullstack/react/og-meta.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "404 - Page not found",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
     return (
-        <div>
+        <div className={css.container}>
             <h1 className={css.title}>404 - Page not found</h1>
             <p className={css.description}>Sorry, the page you are looking for does not exist.</p>
         </div>);

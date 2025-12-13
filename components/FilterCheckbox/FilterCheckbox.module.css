@@ -1,0 +1,39 @@
+.filterLabel {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.filterHiddenInput {
+    display: none;
+}
+
+.filterIcon {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.filterItem {
+    display: flex;
+    width: 112px;
+    height: 96px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+
+}
+
+.filterItem:hover {
+    border-color: #fca5a5;
+}
+
+.filterItem_checked {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
