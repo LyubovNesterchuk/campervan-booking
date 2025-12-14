@@ -6,6 +6,8 @@ import { Toaster } from "react-hot-toast";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://campervan-booking.vercel.app"),
+
   title: "TravelTrucks",
   description: "Travel Trucks is a modern, responsive web application for searching and booking campervans",
 
